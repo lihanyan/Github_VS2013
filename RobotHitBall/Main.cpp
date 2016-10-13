@@ -170,9 +170,9 @@ int main(int argc, char **argv[])
 		NeedToGo[o][4] = 0.009;
 	}
 
-	HANDLE hThread0 = CreateThread(NULL, 0, ImageCollect, NULL, 0, NULL);
-	HANDLE hThread1 = CreateThread(NULL, 0, ShowPic, NULL, 0, NULL);
-	HANDLE hThread2 = CreateThread(NULL, 0, MotorRun, NULL, 0, NULL);
+	HANDLE hThread0 = CreateThread(NULL, 0, ImageCollect, NULL, 0, NULL);//Õº∆¨≤…ºØ
+	HANDLE hThread1 = CreateThread(NULL, 0, ShowPic, NULL, 0, NULL);//ÕºœÒœ‘ æ
+	HANDLE hThread2 = CreateThread(NULL, 0, MotorRun, NULL, 0, NULL);//
 	HANDLE hThreadCANHeart = CreateThread(NULL, 0, CANHeart, NULL, 0, NULL);
 
 	//HANDLE hThread3 = CreateThread(NULL, 0, Drow3D, NULL, 0, NULL);
