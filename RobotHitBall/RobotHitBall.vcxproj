@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{22EA0F73-F788-467A-9996-E35E4CAD27FA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>A_RobotHitBall</RootNamespace>
+    <ProjectName>A_RobotHitBall</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="D:\Programs\OPENCV\opencv249.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="D:\Programs\OPENCV\opencv249.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="D:\Programs\OPENCV\opencv249.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="D:\Programs\OPENCV\opencv249.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>.\UART2CAN;D:\Programs\OPENCV\build\include;C:\Program Files\Microsoft SDKs\Kinect\v2.0_1409\inc;.\external\AntTweakBar-1.16\include;.\external\glfw-3.0.3\include\GLFW;.\external\glm-0.9.4.0;.\external\glew-1.9.0\include;.\external\bullet-2.81-rev2613\src;.\.;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\Microsoft SDKs\Kinect\v2.0_1409\Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>.\UART2CAN;D:\Programs\OPENCV\build\include;C:\Program Files\Microsoft SDKs\Kinect\v2.0_1409\inc;.\external\AntTweakBar-1.16\include;.\external\glfw-3.0.3\include\GLFW;.\external\glm-0.9.4.0;.\external\glew-1.9.0\include;.\external\bullet-2.81-rev2613\src;.\.;D:\programs\TCP;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\Microsoft SDKs\Kinect\v2.0_1409\Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;_WINDOWS;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>shell32.lib;comdlg32.lib;glu32.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;advapi32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;kinect20.lib;external\Lib - Debug\glfw3.lib;external\Lib - Debug\GLEW_190.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;_WINDOWS;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3D;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>shell32.lib;comdlg32.lib;glu32.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;advapi32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;kinect20.lib;external\Lib - Debug\glfw3.lib;external\Lib - Debug\GLEW_190.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="common\controls.hpp" />
+    <ClInclude Include="common\objloader.hpp" />
+    <ClInclude Include="common\shader.hpp" />
+    <ClInclude Include="common\texture.hpp" />
+    <ClInclude Include="D:\programs\TCP\TCPKinectClient.h" />
+    <ClInclude Include="D:\programs\TCP\TCPParameter.h" />
+    <ClInclude Include="D:\programs\TCP\TCPSocket.h" />
+    <ClInclude Include="GetResult.h" />
+    <ClInclude Include="Gettime.h" />
+    <ClInclude Include="Guess.h" />
+    <ClInclude Include="Kalman.h" />
+    <ClInclude Include="MySinglePointTo3D.h" />
+    <ClInclude Include="serialport\MyThread.h" />
+    <ClInclude Include="serialport\SerialPort.h" />
+    <ClInclude Include="UART2CAN\HUST_CAN.h" />
+    <ClInclude Include="UART2CAN\HUST_ReLocal.h" />
+    <ClInclude Include="UART2CAN\HUST_TYPE.h" />
+    <ClInclude Include="UART2CAN\ReverseTheta.h" />
+    <ClInclude Include="UART2CAN\RobotCAN_Proplist.h" />
+    <ClInclude Include="UART2CAN\RT_CAN.h" />
+    <ClInclude Include="UART2CAN\RT_COM.h" />
+    <ClInclude Include="Parameter.h" />
+    <ClInclude Include="FindtheBall.h" />
+    <ClInclude Include="Show3D.h" />
+    <ClInclude Include="GetImage.h" />
+    <ClInclude Include="GettheParameter.h" />
+    <ClInclude Include="HitBall.h" />
+    <ClInclude Include="Initialise.h" />
+    <ClInclude Include="LA_Kinect.h" />
+    <ClInclude Include="ShowPicture.h" />
+    <ClInclude Include="mySerialport.h" />
+    <ClInclude Include="classtemp.h" />
+    <ClInclude Include="KinectSleep.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common\controls.cpp" />
+    <ClCompile Include="common\objloader.cpp" />
+    <ClCompile Include="common\shader.cpp" />
+    <ClCompile Include="common\texture.cpp" />
+    <ClCompile Include="D:\programs\TCP\TCPKinectClient.cpp" />
+    <ClCompile Include="D:\programs\TCP\TCPParameter.cpp" />
+    <ClCompile Include="D:\programs\TCP\TCPSocket.cpp" />
+    <ClCompile Include="GetResult.cpp" />
+    <ClCompile Include="Guess.cpp" />
+    <ClCompile Include="Kalman.cpp" />
+    <ClCompile Include="Parameter.cpp" />
+    <ClCompile Include="serialport\MyThread.cpp" />
+    <ClCompile Include="serialport\SerialPort.cpp" />
+    <ClCompile Include="FindtheBall.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Show3D.cpp" />
+    <ClCompile Include="ShowPicture.cpp" />
+    <ClCompile Include="HitBall.cpp" />
+    <ClCompile Include="GetImage.cpp" />
+    <ClCompile Include="Initialise.cpp" />
+    <ClCompile Include="GettheParameter.cpp" />
+    <ClCompile Include="UART2CAN\HUST_CAN.cpp" />
+    <ClCompile Include="UART2CAN\HUST_ReLocal.cpp" />
+    <ClCompile Include="UART2CAN\ReverseTheta.cpp" />
+    <ClCompile Include="UART2CAN\RT_CAN.cpp" />
+    <ClCompile Include="UART2CAN\RT_COM.cpp" />
+    <ClCompile Include="MySinglePointTo3D.cpp" />
+    <ClCompile Include="Gettime.cpp" />
+    <ClCompile Include="KinectSleep.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="StandardShading.fragmentshader" />
+    <None Include="StandardShading.vertexshader" />
+    <None Include="StandardShading1.fragmentshader" />
+    <None Include="StandardShading1.vertexshader" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{41ed6113-2b9c-4525-a74c-2f9d31b62c52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SerialPort">
+      <UniqueIdentifier>{f8ff1a51-6468-4e3e-8d25-8fb4339e5152}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{0d1f2ff3-3394-4dad-927e-8ba2c5b930df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CAN">
+      <UniqueIdentifier>{157993d9-5f66-441a-9b84-49c65be12259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Relocal">
+      <UniqueIdentifier>{a405f16e-6f18-4c9e-9f86-9dd745d0565b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GetResult">
+      <UniqueIdentifier>{962ee861-05bd-48d2-aaff-266f38bd8edc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TCPSocket">
+      <UniqueIdentifier>{b4aae538-2e48-460e-80bb-b80ef5e6f30e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MySinglePointTo3D.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="UART2CAN\HUST_CAN.h">
+      <Filter>CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="UART2CAN\RobotCAN_Proplist.h">
+      <Filter>CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="UART2CAN\RT_CAN.h">
+      <Filter>CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="UART2CAN\RT_COM.h">
+      <Filter>CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="common\controls.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\objloader.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\shader.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\texture.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="serialport\SerialPort.h">
+      <Filter>SerialPort</Filter>
+    </ClInclude>
+    <ClInclude Include="Parameter.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FindtheBall.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Show3D.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Gettime.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Guess.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Kalman.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GetImage.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GettheParameter.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="HitBall.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Initialise.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="LA_Kinect.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="ShowPicture.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="mySerialport.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="classtemp.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="UART2CAN\HUST_TYPE.h">
+      <Filter>CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="UART2CAN\HUST_ReLocal.h">
+      <Filter>Relocal</Filter>
+    </ClInclude>
+    <ClInclude Include="GetResult.h">
+      <Filter>GetResult</Filter>
+    </ClInclude>
+    <ClInclude Include="UART2CAN\ReverseTheta.h">
+      <Filter>GetResult</Filter>
+    </ClInclude>
+    <ClInclude Include="serialport\MyThread.h">
+      <Filter>SerialPort</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\programs\TCP\TCPKinectClient.h">
+      <Filter>TCPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\programs\TCP\TCPParameter.h">
+      <Filter>TCPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\programs\TCP\TCPSocket.h">
+      <Filter>TCPSocket</Filter>
+    </ClInclude>
+    <ClInclude Include="KinectSleep.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common\controls.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\objloader.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\shader.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\texture.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Show3D.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowPicture.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="HitBall.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GetImage.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FindtheBall.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GettheParameter.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UART2CAN\HUST_CAN.cpp">
+      <Filter>CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="UART2CAN\RT_CAN.cpp">
+      <Filter>CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="UART2CAN\RT_COM.cpp">
+      <Filter>CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="Parameter.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Guess.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Initialise.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MySinglePointTo3D.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Gettime.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Kalman.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UART2CAN\HUST_ReLocal.cpp">
+      <Filter>Relocal</Filter>
+    </ClCompile>
+    <ClCompile Include="GetResult.cpp">
+      <Filter>GetResult</Filter>
+    </ClCompile>
+    <ClCompile Include="UART2CAN\ReverseTheta.cpp">
+      <Filter>GetResult</Filter>
+    </ClCompile>
+    <ClCompile Include="serialport\MyThread.cpp">
+      <Filter>SerialPort</Filter>
+    </ClCompile>
+    <ClCompile Include="serialport\SerialPort.cpp">
+      <Filter>SerialPort</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\programs\TCP\TCPKinectClient.cpp">
+      <Filter>TCPSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\programs\TCP\TCPParameter.cpp">
+      <Filter>TCPSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\programs\TCP\TCPSocket.cpp">
+      <Filter>TCPSocket</Filter>
+    </ClCompile>
+    <ClCompile Include="KinectSleep.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="StandardShading.fragmentshader">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="StandardShading.vertexshader">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="StandardShading1.fragmentshader">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="StandardShading1.vertexshader">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>
